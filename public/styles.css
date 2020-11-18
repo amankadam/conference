@@ -1,0 +1,38 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+.grid-item{
+  width:400px;
+  margin: 10px;
+}
+.badge{
+  position: absolute;
+  right:0;
+  margin-right: 8px;
+  margin-top: 8px;
+  padding: 10px;
+}
+.search{
+  margin-left: 25%;
+  padding-bottom: 5px;
+}
+@media screen and (min-width:1000px){
+  .grid-container{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width:800px){
+  .grid-container{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto;
+  }
+  .search{
+    margin-left: 5%;
+  }
+}
+}
